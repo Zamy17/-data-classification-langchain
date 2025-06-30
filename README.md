@@ -1,29 +1,65 @@
-# 🤖 Data Classification & Extraction using LangChain + Google Colab
+# 🤖 NLP Review Classification & Personality Analysis using LangChain + Google Colab
 
-> 🚀 Project Latihan Data Analyst & NLP – Klasifikasi Review, Ekstraksi Data, dan Analisis Kepribadian menggunakan Python, LangChain, dan Google Colab.
-
----
-
-## 📌 Deskripsi Proyek
-
-Proyek ini adalah hasil dari eksplorasi awal saya dalam dunia **Natural Language Processing (NLP)** dan **Data Classification**. Menggunakan kekuatan LLM (Large Language Model) dari LangChain (dengan API Replicate), saya mencoba:
-
-- 🔍 Mengklasifikasikan review pelanggan (Positif, Negatif, atau Campuran)
-- 🧠 Mengekstraksi informasi penting (nama, umur, dan pekerjaan) dari kalimat deskriptif
-- 📊 Melakukan **EDA (Exploratory Data Analysis)** pada dataset kepribadian
-- 🎨 Membuat visualisasi perbandingan waktu menyendiri antara **Introvert vs Extrovert**
+> 🚀 This project is a beginner-level exploration in **Natural Language Processing (NLP)**, **Data Classification**, and **LLM-powered Extraction** using LangChain (Replicate API) in Google Colab.
 
 ---
 
-## 🛠️ Tools & Teknologi
+## 📌 Project Summary
 
-| Tool | Kegunaan |
-|------|----------|
-| 🐍 Python | Bahasa utama |
-| 🧠 LangChain + Replicate | LLM processing |
-| 🧪 Google Colab | Lingkungan eksperimen |
-| 📊 pandas | Analisis data |
-| 📈 seaborn & matplotlib | Visualisasi |
-| 💾 GitHub | Version control & portofolio |
+This project demonstrates how to:
+
+- 🔍 Classify customer reviews as **Positive**, **Negative**, or **Mixed**
+- 🧠 Extract structured data like **name**, **age**, and **job** from free-form tex
+- 📊 Perform basic **Exploratory Data Analysis (EDA)** on a personality dataset
+- 🎨 Visualize time spent alone by **Introverts vs Extroverts**
+
+All experiments were run in Google Colab using Python, LangChain, and open-source libraries.
 
 ---
+
+## 🧰 Tools & Technologies Used
+
+| Tool | Description |
+|------|-------------|
+| 🐍 Python | Programming language |
+| 🧠 LangChain + Replicate | LLM interaction |
+| 📚 pandas | Data analysis |
+| 📈 seaborn, matplotlib | Visualization |
+| 🧪 Google Colab | Interactive notebook |
+| 💻 GitHub | Version control & portfolio |
+
+---
+
+## 📁 File Structure
+
+📦 data-classification-langchain/
+├── sdi_data_session_2_m_zam_zami.py # Python script exported from Google Colab
+├── README.md # This markdown file
+
+
+---
+
+## 💡 Key Code Examples
+
+### ✅ Review Classification with LLM
+```python
+prompt = f"""
+Classify this review as Positive, Negative, Mixed. Respond with label only.
+{review}
+"""
+ai_output = llm.invoke(prompt)
+print("AI Output:", ai_output)
+
+🧾 Extract Name, Age, Job from Sentence
+
+prompt = f"""
+Please extract the data and get name, age, and job. Output in JSON.
+{row}
+"""
+ai_output = llm.invoke(prompt)
+print("AI Output:", ai_output)
+
+📊 Plot Introvert vs Extrovert Time
+
+sns.barplot(x=['Introvert', 'Extrovert'], y=[avg_alone_intro, avg_alone_extro])
+plt.title('Average Alone Time: Introvert vs Extrovert')

@@ -29,15 +29,6 @@ All experiments were run in Google Colab using Python, LangChain, and open-sourc
 | 💻 GitHub | Version control & portfolio |
 
 ---
-
-## 📁 File Structure
-
-📦 data-classification-langchain/
-├── sdi_data_session_2_m_zam_zami.py # Python script exported from Google Colab
-├── README.md # This markdown file
-
-
----
 ## 📊 Sample Visualization
 
 ![Introvert vs Extrovert Visualization](https://raw.githubusercontent.com/Zamy17/-data-classification-langchain/main/introvert_vs_extrovert.png)

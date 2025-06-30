@@ -38,9 +38,13 @@ All experiments were run in Google Colab using Python, LangChain, and open-sourc
 
 
 ---
+## 📊 Sample Visualization
 
+![Introvert vs Extrovert Visualization](https://raw.githubusercontent.com/Zamy17/-data-classification-langchain/main/introvert_vs_extrovert.png)
+
+---
 ## 💡 Key Code Examples
-
+---
 ### ✅ Review Classification with LLM
 ```python
 prompt = f"""
